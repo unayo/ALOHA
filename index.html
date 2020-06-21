@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALOHA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="menu container d-flex justify-content-between align-items-center">
+      <h1><a href="index.html"><img src="./assets/images/logo.svg" alt="LOGO"></a></h1>
+      <ul class="d-flex mb-0">
+        <li class="dropdown mr-5">
+          <button class="btn dropdown-toggle d-flex align-items-center p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="material-icons">language</span>
+          </button>
+        </li>
+        <li class="mr-5"><a href="#">Sign up</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </header>
+
+    
+<main>
+  <section class="banner">
+    <div class="bg-cover"></div>
+    <h2 class="raleway-bold text-center text-white">Discover your ideal hotel</h2>
+  </section>
+  <section class="container">
+    <ul class="search-bar bg-light d-flex justify-content-around align-items-center">
+      <li>
+        <button class="bar-btn d-flex align-items-center p-0 text-muted" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="material-icons p-3 text-dark">location_on</span>Destination
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item d-flex" href="#"><span class="material-icons">star</span><div><p class="mb-0">Bangkok</p><span class="text-small">Thailand</span></div></a>
+          <a class="dropdown-item d-flex" href="#"><span class="material-icons">star</span><div><p class="mb-0">Osaka</p><span class="text-small">Japan</span></div></a>
+          <a class="dropdown-item d-flex" href="#"><span class="material-icons">star</span><div><p class="mb-0">Roma</p><span class="text-small">Italy</span></div></a>
+          <a class="dropdown-item d-flex" href="#"><span class="material-icons">star</span><div><p class="mb-0">Paris</p><span class="text-small">London</span></div></a>
+          <a class="dropdown-item d-flex" href="#"><span class="material-icons">star</span><div><p class="mb-0">Reykjavík</p><span class="text-small">Iceland</span></div></a>
+        </div>
+      </li>
+      <li>
+        <button class="bar-btn d-flex align-items-center p-0 text-muted" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="material-icons p-3 text-dark">date_range</span>Check-in / Check-out
+        </button>
+      </li>
+      <li>
+        <button class="bar-btn d-flex align-items-center p-0 text-muted" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="material-icons p-3 text-dark">person</span>Guests
+        </button>
+        <ul class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton">
+          <li class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="mb-0 mr-5">Adult</h6>
+            <div class="d-flex">
+              <span class="material-icons">remove</span>
+              <div class="member px-4">2</div>
+              <span class="material-icons">add</span>
+            </div>
+          </li>
+          <li class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="mb-0 mr-5">Child</h6>
+            <div class="d-flex">
+              <span class="material-icons">remove</span>
+              <div class="member px-4">0</div>
+              <span class="material-icons">add</span>
+            </div>
+          </li>
+          <li class="d-flex justify-content-between align-items-center">
+            <h6 class="mb-0 mr-5">Room</h6>
+            <div class="d-flex">
+              <span class="material-icons">remove</span>
+              <div class="member px-4">1</div>
+              <span class="material-icons">add</span>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li><a href="detail.html" class="search-btn">search</a></li>
+    </ul>
+  </section>
+  <section class="top-choice container mb-5">
+    <h3 class="raleway-bold">Top Choices</h3>
+    <div class="row flex-column flex-wrap">
+      <div class="col">
+        <nav>
+          <div class="nav nav-tabs mb-4" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link font-weight-bold active" id="bali-tab" data-toggle="tab" href="#bali" role="tab" aria-controls="bali" aria-selected="true">Bali<span class="choices-tab">128</span></a>
+              <a class="nav-item nav-link font-weight-bold" id="okinawa-tab" data-toggle="tab" href="#okinawa" role="tab" aria-controls="okinawa" aria-selected="false">Okinawa<span class="choice-tab">67</span></a>
+              <a class="nav-item nav-link font-weight-bold" id="taipei-tab" data-toggle="tab" href="#taipei" role="tab" aria-controls="taipei" aria-selected="false">Taipei<span class="choice-tab">53</span></a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active d-flex justify-content-between" id="bali" role="tabpanel" aria-labelledby="bali-tab">
+              <div class="card" style="width: 16rem;">
+                <img src="./assets/images/top1.jpg" class="card-img-top" alt="...">
+                <div class="card-body px-0 pt-2">
+                  <h6>Hotel Aqua</h6>
+                  <div class="d-flex align-items-center mt-2"><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                    <span class="text-small ml-1">5.0</span><span class="text-second-small">・2k reviews</span>
+                  </div>
+                  <div class="text-small mt-2">TWD 2,480<span class="discount text-second-small ml-2">TWD 3,980</span></div>
+                </div>
+              </div>
+              <div class="card" style="width: 16rem;">
+                <img src="./assets/images/top2.jpg" class="card-img-top" alt="...">
+                <div class="card-body px-0 pt-2">
+                  <h6>Mr. Kawasaki Inn</h6>
+                  <div class="d-flex align-items-center mt-2"><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                    <span class="text-small ml-1">4.0</span><span class="text-second-small">・500 reviews</span>
+                  </div>
+                  <div class="text-small mt-2">TWD 3,380</div>
+                </div>
+              </div>
+              <div class="card" style="width: 16rem;">
+                <img src="./assets/images/top3.jpg" class="card-img-top" alt="...">
+                <div class="card-body px-0 pt-2">
+                  <h6>Weekly Paradise</h6>
+                  <div class="d-flex align-items-center mt-2"><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                    <span class="text-small ml-1">4.0</span><span class="text-second-small">・470 reviews</span>
+                  </div>
+                  <div class="text-small mt-2">TWD 4,780</div>
+                </div>
+              </div>
+              <div class="card" style="width: 16rem;">
+                <img src="./assets/images/top4.jpg" class="card-img-top" alt="...">
+                <div class="card-body px-0 pt-2">
+                  <h6>Beast Hotel</h6>
+                  <div class="d-flex align-items-center mt-2"><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                    <span class="text-small ml-1">4.0</span><span class="text-second-small">・283 reviews</span>
+                  </div>
+                  <div class="text-small mt-2">TWD 1,980</div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="okinawa" role="tabpanel" aria-labelledby="okinawa-tab">
+              <div class="tab-pane fade show active d-flex justify-content-between" id="recommended" role="tabpanel" aria-labelledby="recommended-tab">
+                <div class="card" style="width: 16rem;">
+                  <img src="./assets/images/top1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body px-0 pt-2">
+                    <h6>Hotel Aqua</h6>
+                    <div class="d-flex align-items-center mt-2"><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                      <span class="text-small ml-1">5.0</span><span class="text-second-small">・2k reviews</span>
+                    </div>
+                    <div class="text-small mt-2">TWD 2,480<span class="discount text-second-small ml-2">TWD 3,980</span></div>
+                  </div>
+                </div>
+                <div class="card" style="width: 16rem;">
+                  <img src="./assets/images/top2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body px-0 pt-2">
+                    <h6>Mr. Kawasaki Inn</h6>
+                    <div class="d-flex align-items-center mt-2"><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                      <span class="text-small ml-1">4.0</span><span class="text-second-small">・500 reviews</span>
+                    </div>
+                    <div class="text-small mt-2">TWD 3,380</div>
+                  </div>
+                </div>
+                <div class="card" style="width: 16rem;">
+                  <img src="./assets/images/top3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body px-0 pt-2">
+                    <h6>Weekly Paradise</h6>
+                    <div class="d-flex align-items-center mt-2"><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                      <span class="text-small ml-1">4.0</span><span class="text-second-small">・470 reviews</span>
+                    </div>
+                    <div class="text-small mt-2">TWD 4,780</div>
+                  </div>
+                </div>
+                <div class="card" style="width: 16rem;">
+                  <img src="./assets/images/top4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body px-0 pt-2">
+                    <h6>Beast Hotel</h6>
+                    <div class="d-flex align-items-center mt-2"><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+                      <span class="text-small ml-1">4.0</span><span class="text-second-small">・283 reviews</span>
+                    </div>
+                    <div class="text-small mt-2">TWD 1,980</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="taipei" role="tabpanel" aria-labelledby="taipei-tab">..3.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="popular container mb-5">
+    <h3 class="raleway-bold">Popular Destinations</h3>
+    <ul class="d-flex flex-wrap justify-content-between">
+      <li class="card-popular mt-4">
+          <img src="./assets/images/pop1.jpg" alt="japan">
+          <div class="bg-cover"></div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="text-second-small">JAPAN</span><h5 class="text-white">Osaka</h5>
+            </div>
+            <span class="material-icons text-white">keyboard_arrow_down</span>
+          </div>
+      </li>
+      <li class="card-popular mt-4">
+        <img src="./assets/images/pop2.jpg" alt="japan">
+        <div class="bg-cover"></div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <span class="text-second-small">JAPAN</span><h5 class="text-white">Kyoto</h5>
+          </div>
+          <span class="material-icons text-white">keyboard_arrow_down</span>
+        </div>
+      </li>
+      <li class="card-popular mt-4">
+        <img src="./assets/images/pop6.jpg" alt="japan">
+        <div class="bg-cover"></div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <span class="text-second-small">iceland</span><h5 class="text-white">Reykjavík</h5>
+          </div>
+          <span class="material-icons text-white">keyboard_arrow_down</span>
+        </div>
+      </li>
+      <li class="card-popular mt-4">
+        <img src="./assets/images/pop3.jpg" alt="japan">
+        <div class="bg-cover"></div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <span class="text-second-small">France</span><h5 class="text-white">Paris</h5>
+          </div>
+          <span class="material-icons text-white">keyboard_arrow_down</span>
+        </div>
+      </li>
+      <li class="card-popular mt-4">
+        <img src="./assets/images/pop4.jpg" alt="japan">
+        <div class="bg-cover"></div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <span class="text-second-small">Italy</span><h5 class="text-white">Roma</h5>
+          </div>
+          <span class="material-icons text-white">keyboard_arrow_down</span>
+        </div>
+      </li>
+      <li class="card-popular mt-4">
+        <img src="./assets/images/pop5.jpg" alt="japan">
+        <div class="bg-cover"></div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <span class="text-second-small">Thailand</span><h5 class="text-white">Bangkok</h5>
+          </div>
+          <span class="material-icons text-white">keyboard_arrow_down</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="inspiration container mb-5">
+    <div class="d-flex justify-content-between align-items-center">
+      <h3 class="raleway-bold">Get Inspiration</h3>
+      <button type="button" class="btn btn-outline-primary">see more</button>
+    </div>
+    <ul class="d-flex justify-content-between">
+      <li class="card mt-4" style="width:350px;">
+        <img src="./assets/images/get1.jpg" class="card-img-top" alt="image">
+        <div class="card-body px-0 pt-2">
+          <h4 class="raleway-bold">The fifth most visited country</h4>
+          <p class="text-muted">Italy is the fifth most visited country in the world, with a total of 52.3 million…</p>
+        </div>
+      </li>
+      <li class="card mt-4" style="width:350px;">
+        <img src="./assets/images/get3.jpg" class="card-img-top" alt="image">
+        <div class="card-body px-0 pt-2">
+          <h4 class="raleway-bold">Visit Thailand for Bangkok</h4>
+          <p class="text-muted">Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…</p>
+        </div>
+      </li>
+      <li class="card mt-4" style="width:350px;">
+        <img src="./assets/images/get2.jpg" class="card-img-top" alt="image">
+        <div class="card-body px-0 pt-2">
+          <h4 class="raleway-bold">Lord of the Rings Tour</h4>
+          <p class="text-muted">The national cuisine has been described as Pacific Rim, incorporating the native Māori…</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="subscribe bg-light py-5">
+    <div class="container">
+      <h2 class="raleway-exbold text-center mb-4 pt-5">Subscribe for Exclusive Offer</h2>
+      <div class="input-group row mb-3 col-6 mx-auto pb-5">
+        <input type="text" class="form-control" style="width:390px;" placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+    <footer class="footer container">
+      <ul class="d-flex justify-content-between align-items-center my-4">
+        <li class="d-flex">
+          <p class="text-small mb-0 mr-5 pr-3">© 2020 ALOHA, Inc. All rights reserved.</p>
+          <a class="text-small mr-4" href="#">FAQs</a>
+          <a class="text-small mr-4" href="#">Terms of use</a>
+          <a class="text-small" href="#">Privacy policy</a>
+        <li class="d-flex">
+          <button class="text-small btn dropdown-toggle d-flex align-items-center p-0 mr-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="material-icons">language</span>English
+          </button>
+          <button class="text-small btn dropdown-toggle d-flex align-items-center p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="material-icons">attach_money</span>TWD
+          </button>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
