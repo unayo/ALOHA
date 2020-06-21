@@ -10993,8 +10993,16 @@ ul {
 }
 
 /* header */
-.menu {
+header {
+  z-index: 10;
+}
+
+header .menu {
   height: 74px;
+}
+
+.header-block {
+  height: 178px;
 }
 
 .title-tab {
